@@ -5,7 +5,7 @@
 // Использовать внутри функции саму Array.prototype.reduce запрещено. В качестве ответа принимается ссылка на решение.
 
 const myReduce = function (arr, fn, initialValue) {
-  const acc = initialValue;
+  let acc = initialValue;
   for (const item of arr) {
     acc = fn(acc, item);
   }
